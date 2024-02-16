@@ -1,0 +1,472 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-image: url(image/bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+#main{
+    height: 120px;
+    width: 100%;
+    background: wheat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#logo{
+    height: 120px;
+}
+#logo img{
+    height: 100%;
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 8px;
+}
+#txt{
+    height: 30%;
+    width: 50%;
+    /* background: rgb(242, 237, 237); */
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    text-align: center;
+}
+#txt h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#txt h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+#txt p{
+    margin-bottom: 30px;
+}
+#txt a{
+    background: wheat;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    text-decoration: none;
+}
+#abt{
+    height: 50vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    /* border: 1px solid black; */
+}
+#abt-main{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#abt1{
+    height: 45vh;
+    width: 45%;
+}
+#abt1 h1{
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+#abt1 p{
+    margin-bottom: 20px;
+    
+}
+#abt1 a{
+    background: wheat;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 10px;
+    color: black;
+}
+#gallery{
+    height: 100vh;
+    width: 80%;
+    margin-left: 10%;
+    /* border: 1px solid black; */
+    margin-top: 5%;
+}
+#d-main{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap
+}
+#gallery h1{
+    font-size: 30px;
+    text-decoration: underline;
+}
+#a{
+    height: 43vh;
+    width: 22%;
+}
+#a img{
+    height: 100%;
+    width: 100%;
+}
+#rw{
+    height: 90vh;
+    width: 80%;
+    margin-left: 10%;
+    /* border: 1px solid black; */
+margin-top: 5%;
+}
+#rw-main{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+#rw1{
+    height: 85vh;
+    width: 30%;
+    /* border: 1px solid gray; */
+    text-align: center;
+    
+}
+#rw1 img{
+    height: 50vh;
+    width: 100%;
+
+}
+#rw1 p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#rw1 a{
+    font-size: 20px;
+    background: wheat;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+#co{
+    height: 70vh;
+    width: 80%;
+    margin-left: 10%;
+    /* border: 1px solid black; */
+    margin-top: 5%;
+}
+#co-main{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#co1{
+    height: 70vh;
+    width: 45%;
+}
+#co1 img{
+    height: 100%;
+    width: 100%;
+}
+#co1 h1{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+#co1 input{
+    width: 90%;
+    height: 40px;
+}
+#co1 a{
+    background: wheat;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+footer{
+    height: 20vh;
+    width: 100%;
+    margin-top: 100px;
+    background: black;
+    color: white;
+}
+#ft-main{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (min-width:480px) and (max-width:720px)
+ {
+    #abt{
+        height: auto;
+        width: auto;
+    }
+    #abt-main{
+        height: auto;
+        width: auto;
+    }
+    #abt1{
+        height: auto;
+        /* width: 50%; */
+    }
+    #abt1 img{
+        width: 95%;
+    }
+    #gallery{
+        height: auto;
+        width: auto;
+    }
+    #main-g{
+        height: auto;
+        width: auto;
+        flex-wrap: wrap;
+    }
+    #a{
+        height: auto;
+        width: 30%;
+    }
+    #rw{
+        height: auto;
+        width: auto;
+        margin-bottom: 90px;
+    }
+    #rw-main{
+        height: auto;
+        width: auto;
+
+    }
+    #rw1 p{
+        font-size: 15px;
+    }
+    #co1 textarea{
+        width: 80%;
+    }
+    #abt1 p{
+        font-size: 13px;
+    }
+    #abt1 a{
+        padding: 2px;
+    }
+}
+
+@media (min-width:360px) and (max-width:480px)
+ {
+    nav ul li a{
+        padding: 0;
+        font-size: 15px;
+    }
+    #txt h1{
+        font-size: 25px;
+    }
+    #txt h2{
+        font-size: 20px;
+    }
+    #txt p{
+        font-size: 14px;
+    }
+    #txt a{
+        padding: 2px;
+    }
+    #abt{
+        height: auto;
+        width: 80%;
+        border: none;
+    }
+    #abt-main{
+        height: auto;
+        width: 80%;
+        flex-direction: column;
+    }
+    #abt1 img{
+        width: 120%;
+    }
+    #abt1{
+        height: auto;
+        width: auto;
+    }
+    #gallery{
+        height: auto;
+        width: auto;
+        margin: 0;
+        margin-top: 50px;
+    }
+    #d-main{
+        height: auto;
+        width: auto;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    #a{
+        height: auto;
+        width: 45%;
+    }
+    #rw{
+        height: auto;
+        width: auto;
+        margin: 0;
+        margin-top: 50px;
+    }
+    #rw-main{
+        height: auto;
+        width: auto;
+        flex-direction: column;
+    }
+    #rw1{
+        height: auto;
+        width: 80%;
+    }
+    #co{
+        height: auto;
+        width: auto
+        ;
+    }
+    #co-main{
+        height: auto;
+        width: auto;
+        flex-direction: column;
+    }
+    #co1 textarea{
+        width: 90%;
+    }
+    #co1{
+        height: auto;
+        width: 80%;
+    }
+    footer{
+        height: auto;
+        width: auto;
+    }
+    #ft-main{
+        height: auto;
+        width: auto;
+        flex-direction: column;
+    }
+    #ft1{
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+@media (min-width:0px) and (max-width:360px)
+ {
+    nav ul li a{
+        padding: 0;
+        font-size: 15px;
+    }
+    #txt h1{
+        font-size: 25px;
+    }
+    #txt h2{
+        font-size: 20px;
+    }
+    #txt p{
+        font-size: 14px;
+    }
+    #txt a{
+        padding: 2px;
+    }
+    #abt{
+        height: auto;
+        width: 80%;
+        border: none;
+    }
+    #abt-main{
+        height: auto;
+        width: 80%;
+        flex-direction: column;
+    }
+    #abt1 img{
+        width: 120%;
+    }
+    #abt1{
+        height: auto;
+        width: auto;
+    }
+    #gallery{
+        height: auto;
+        width: auto;
+        margin: 0;
+        margin-top: 50px;
+    }
+    #d-main{
+        height: auto;
+        width: auto;
+        flex-direction: column;
+
+    }
+
+    #a{
+        height: auto;
+        width: 80%;
+    }
+    #rw{
+        height: auto;
+        width: auto;
+        margin: 0;
+        margin-top: 50px;
+    }
+    #rw-main{
+        height: auto;
+        width: auto;
+        flex-direction: column;
+    }
+    #rw1{
+        height: auto;
+        width: 80%;
+    }
+    #co{
+        height: auto;
+        width: auto
+        ;
+    }
+    #co-main{
+        height: auto;
+        width: auto;
+        flex-direction: column;
+    }
+    #co1 textarea{
+        width: 90%;
+    }
+    #co1{
+        height: auto;
+        width: 80%;
+    }
+    footer{
+        height: auto;
+        width: auto;
+    }
+    #ft-main{
+        height: auto;
+        width: auto;
+        flex-direction: column;
+    }
+    #ft1{
+        height: auto;
+        width: 100%;
+    }
+}
+

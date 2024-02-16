@@ -1,0 +1,202 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+
+@mixin grid($val){
+    display:grid;
+    grid-template-colums:repeat(auto-fit,minmax($val,1fr));
+    gap:1.5rem;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+
+    &::-webkit-scrollbar{
+        width: 1rem;
+    }
+    &::-webkit-scrollbar-track{
+        background:#fff;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: #10221b;
+    }
+}
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bolder;
+}
+header .logo i{
+    color: #1d674a;
+    font-size: 30px;
+}
+.navbar a{
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    color: black;
+}
+.navbar a:hover{
+    color: #1d674a;
+}
+#nav-close{
+    font-size: 5rem;
+    cursor: pointer;
+    color: black;
+    display: none;
+}
+.icons a, .icons div{
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: black;
+}
+.icons div:hover{
+    color: #1d674a;
+} 
+.icons a:hover{
+    color: #1d674a;
+} 
+#menu-btn {
+    display: none;
+}
+.serach-form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    transform: translateY(-110%);
+}
+.serach-form #close-search{
+     position: absolute;
+     top: 1.5rem;
+     right: 2.5rem;
+     cursor: pointer;
+     color: #fff;
+     font-size: 6rem;
+}
+.serach-form #close-search:hover{
+    color: #1d674a;
+}
+.serach-form form{
+    width: 70rem;
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+    border-bottom: .2rem solid #fff;
+    display: flex;
+    align-items: center;
+}
+.serach-form form input{
+    width: 100%;
+    font-size:2rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+    padding-right: 2r2m;
+}
+.serach-form form input ::placeholder{
+    color: #aaa;
+}
+.serach-form form label{
+    font-size: 3rem;
+    cursor: pointer;
+    color: #fff;
+}
+.serach-form form label:hover{
+    color: #1d674a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query
+
+@media (max-width:1200px){
+    .header{
+        padding: 2rem;
+    }
+}
+@media (max-width:991px){
+    .html{
+        font-size: 55%;
+    }
+}
+@media (max-width:768px){
+    
+        .header #menu-btn {
+            display: inline-block;
+        }
+        .header .navbar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #fff;
+            z-index: 10000;
+            width: 35rem;
+            height: 100%;
+            box-shadow: 0 0 0 100vw rgba(0, 0, 0, .8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .header .navbar a{
+                margin: 1rem 0;
+                font-size: 3rem;
+            }
+            .header .navbar #nav-close{
+                display: block;
+                position: absolute;
+                top: 1rem;
+                right: 2rem;
+            }
+          
+       
+        
+    }
+@media (max-width:450px){
+    .html{
+        font-size: 55%;
+    }
+} */

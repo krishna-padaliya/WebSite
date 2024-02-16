@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="website icon" type="jpg" href="image/ram.png">
+  <title>RAM</title>
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!-- icon  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- remix  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- header  -->
+  <header>
+    <div class="main-hed">
+        <div class="logo">
+       <img height="250px" src="image/logo-h.png" alt="">
+       </div>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">ONLINE BOOKING</a></li>
+                <li><a href="">EVENTS</a></li>
+                <li><a href="">RAMAYANA</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div id="btn">
+        <a href="#" ><span class="pan">Donate</span><i></i></a>
+      </div>
+        <i class="ri-menu-line" id="menu" ></i>
+    </div>
+    <script>
+    $(document).ready(function(){
+        $("#menu").click(function(){
+            $("nav ul li").toggle(2000);
+        });
+    });
+    </script>
+    <div class="video  animate__animated animate__flipInX">
+        <i class="ri-play-line" onclick="playvideo('images/video.mp3')"></i> <span><a href="">Watch Ayodhya View</a></span>
+    </div>
+    <div class="video-player" id="videoplayer">
+    <video width="100%" controls autoplay id="myvideo">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yPQ7rJSMBqQ?si=k-uwWEMGXhR62Qcq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </video>
+    <i class="ri-close-line" id="close-btn" onclick="stopvideo()"></i>
+    </div>
+    <script>
+        var videoplayer = document.getElementById("videoplayer");
+        var myvideo = document.getElementById("myvideo");
+        function stopvideo(){
+            videoplayer.style.display = "none";
+        }
+        function playvideo(file){
+            // myvideo.src = file;
+            videoplayer.style.display = "block";
+
+        }
+    </script>
+</header>
+  <!-- header  -->
+
+  <!-- history  -->
+  <center>
+  <div id="box" class="rounded-top">
+    <h1>Ayodhya</h1>
+  </div>
+</center>
+    <div id="history" class="d-flex">
+     <div id="h-img">
+      <img src="https://uptourism.gov.in/site/writereaddata/siteContent/Year_2024/202401161100313738ramlala.jpg" alt="">
+     </div>
+     <div id="h-txt">
+      <p>
+        Many eminent kings such as Ikshvaku, Prithu, Mandhata, Harishchandra, Sagar, Bhagirath, Raghu, Dileep, Dashrath and Ram ruled the capital city of Kosaldesh. It was during their reign, that the grandeur of the kingdom reached its pinnacle and epitomized Ram Rajya.
+      </p>
+      <p>
+        Located on the east bank of River Saryu, Ayodhya is brimming with the remnants of a bygone era. The famous epics, Ramayan and ShriRamcharitmanas exhibit the splendour of Ayodhya.
+      </p>
+      <p>
+        An episode of Ramayan, a page of ancient history and a cluster of tourist attractions, this town has been a major centre for pilgrims, historians, archaeologists and students alike.
+      </p>
+      <p>
+        Summer in Ayodhya between April and June is quite warm; sometimes the mercury rise up to 47°C. Winter from November to February experiences a plunge to 10°C. The best time to plan a visit would be between October to March.
+      </p>
+     </div>
+    </div>
+  <!-- history  -->
+
+
+  <!-- place to visit  -->
+  <div id="places">
+    <h4>Places to Visit</h4>
+    <div id="place-right" class="d-flex">
+      <div id="place-txt">
+        <i class="ri-quill-pen-fill rounded-top" ></i> <span>Hanumangarhi</span>
+        <div id="line"></div>
+        <p>
+          Constructed in the shape of a fort and accessed by a flight of seventy - six steps, the 10th century ancient temple nestles in the centre of the pilgrim town. It has circular fortifications in each corner and is believed to be the spot where Lord Hanuman resided in a cave and protected the town.
+        </p>
+        <p>
+          The temple has a golden idol of Lord Hanuman; it is counted amongst the most
+        </p>
+        <p>
+          Every day thousands of devotees visit Hanumangarhi to offer prayers and seek Lord Hanuman's protection from evils, and blessing for happiness and prosperity.
+        </p>
+      </div>
+      <div id="place-img">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNdNDhZUBNWeyzinsp3digO4jJfQ2e3V0TsJ2i0RhpAF_oqEbYL76St8G4X-_9Gts5tnw&usqp=CAU" alt="">
+      </div>
+    </div>
+  
+<br><br>
+
+  <div id="place-right" class="d-flex">
+    <div id="place-txt">
+      <i class="ri-quill-pen-fill rounded-top"></i> <span>Ramkot</span>
+      <div id="line"></div>
+      <p>
+        (Summer- 6.30 am to 10.30 am and 3.00 pm to 6.00 pm, Winter- 7.30 am to 10.30 am and 2.00 pm to 5.00 pm).
+      </p>
+      <p>
+        Situated on a high ground and replete with temples and shrines, it is one of the major attractions in Ayodhya.
+      </p>
+      <p>
+        The Ram Navami festival is celebrated here in the month of Chaitra (March - April), as per Hindu calendar, with great pomp and show. It is during this time that pilgrims from all over the country and the world visit in huge numbers and pay obeisance to Lord Ram.
+      </p>
+    </div>
+    <div id="place-img">
+      <img src="https://res.cloudinary.com/www-travelpakistani-com/image/upload/v1666943883/Ramkot_Fort_-_Mirpur_Azad_Kashmir_Pakistan.jpg" alt="">
+    </div>
+  </div>
+
+  <br><br>
+
+  <div id="place-right" class="d-flex">
+    <div id="place-img">
+      <img src="image/Shri-Nageshwarnath-Temple.jpg" alt="">
+    </div>
+    <div id="place-txt1">
+      <i class="ri-quill-pen-fill rounded-top"></i> <span>Shri Nageshwarnath Temple</span>
+      <div id="line"></div>
+      <p>
+        The presiding deity of Ayodhya is Lord Nageshwarnathji. It is believed that Lord Ram’s son, Kush, built the beautiful temple dedicated to him. The shivalinga ensconced here is said to be quite ancient.
+      </p>
+      <p>
+        As per folklore, Kush was taking a bath in the Saryu River when his armlet fell in the water. After sometime, a nag kanya (snake woman) appeared and returned it to him. They fell in love with each other and Kush got the temple structured for her.
+      </p>
+      <p>
+        Being one of the most important and venerated temples in Ayodhya, it attracts large crowds of devotees from all over during the festival of Mahashivaratri. The present edifice of the temple was constructed in 1750 AD.
+      </p>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div id="place-right" class="d-flex">
+    <div id="place-img">
+      <img src="image/Kanak-Bhawan-a.jpg" alt="">
+    </div>
+    <div id="place-txt1">
+      <i class="ri-quill-pen-fill rounded-top"></i> <span>Kanak Bhawan</span>
+      <div id="line"></div>
+      <p>
+        Vrishbhanu Kuvari, Queen of Teekamgarh (Madhya Pradesh) in 1891, constructed the exquisitely embellished temple.
+      </p>
+      <p>
+        The main temple surrounds an open inner area which houses the sacred shrine of Rampada.
+      </p>
+      <p>
+        Marvel at the beautiful idols of Goddess Sita along with Lord Ram and his three brothers.
+      </p>
+    </div>
+  </div>
+
+<br><br>
+
+
+<div id="place-right" class="d-flex">
+  <div id="place-txt">
+    <i class="ri-quill-pen-fill rounded-top"></i> <span>Tulsi Smarak Bhawan</span>
+    <div id="line"></div>
+    <p>
+      TulsiSmarakBhawan is dedicated to the great saint - poet Goswami Tulsidas Ji. Regular prayer meetings, devotional concerts and religious discourses are held here. The complex also houses Ayodhya Shodh Sansthan which has a large repository of literary compositions on GoswamiTulsidasJi.
+    </p>
+    <p>
+      Ramleela is performed every day from 6.00 pm to 9.00 pm at Tulsi Smarak Auditorium; it is a major attraction.
+    </p>
+  </div>
+  <div id="place-img">
+    <img src="image/Tulsi-Smarak-Bhawan.jpg" alt="">
+  </div>
+</div>
+
+<br><br>
+
+<div id="place-right" class="d-flex">
+  <div id="place-txt">
+    <i class="ri-quill-pen-fill rounded-top"></i> <span>Treta-ke-Thakur</span>
+    <div id="line"></div>
+    <p>
+      Also famous as Kaleram - ka - Mandir, the beautiful temple is believed to mark the spot where Lord Ram performed the legendary AshwamedhYagna. The Raja of Kullu (Himachal Pradesh) built the present structure about three centuries ago. It was later renovated by Maharani Ahilyabai Holkar of Indore (Madhya Pradesh). The statues installed here are made of black sandstone; it is believed that they belong to the era of King Vikramaditya.
+      Tulsi Smarak Bhawan.      
+    </p>
+  </div>
+  <div id="place-img">
+    <img src="image/Treta-ke-Thakur.jpg" alt="">
+  </div>
+</div>
+
+<br><br>
+
+<div id="place-right" class="d-flex">
+  <div id="place-img">
+    <img src="image/jain-shrines-in-ayodhya.jpg" alt="">
+  </div>
+  <div id="place-txt1">
+    <i class="ri-quill-pen-fill rounded-top"></i> <span>Jain Shrines in Ayodhya</span>
+    <div id="line"></div>
+    <p>
+      It is not just the birthplace of Lord Ram but is also a place of high importance for the Jains, with five Jain Tirthankars believed to be born here. Every year, followers reach this town in large numbers to pay obeisance to these great saints and take part in the special occasions. There are many Jain temples spread all over the holy town; one can visit the Lord Adinath Temple near Swargdwar, Lord Anantnath Temple at GolaGhat, Lord Sumantnath shrine at Ramkot, Lord Ajitnath Temple near Saptsagar and Lord Abhinandannath Temple in Sarai locality.
+    </p>
+    <p>
+      A huge Jain temple is situated in Raiganj area; it is home to an exclusive 21 ft tall idol of Lord Adinath (Rishabhdevji), who happened to be the first Tirthankar.
+    </p>
+  </div>
+</div>
+
+ <br><br>
+
+ <div id="place-right" class="d-flex">
+  <div id="place-img">
+    <img src="image/Mani-Parvat.jpg" alt="">
+  </div>
+  <div id="place-txt1">
+    <i class="ri-quill-pen-fill rounded-top"></i> <span>Mani Parvat</span>
+    <div id="line"></div>
+    <p>
+      It is believed that when Lord Hanuman was carrying the huge mountain with Sanjivani Booti (a herb) to Lanka for the purpose of saving injured Lakhshman, brother of Lord Ram, some part of it fell in Ayodhya. The hillock, about 65 feet high, was later named as Mani Parvat.
+    </p>
+  </div>
+</div>
+
+<br><br>
+
+<div id="place-right" class="d-flex">
+  <div id="place-txt">
+    <i class="ri-quill-pen-fill rounded-top"></i> <span>Chhoti Devkali Temple</span>
+    <div id="line"></div>
+    <p>
+      Located close to Naya Ghat, this temple is associated with numerous fables from the Hindu epic, Mahabharat. According to Mythology, Mother Sita arrived at Ayodhya with an idol of goddess Girija Devi after her wedding with Lord Ram. It is believed that King Dashrath got a beautiful temple constructed and the idol was established in the sanctum sanctorum. Mother Sita used to worship here every day. It is presently dedicated to goddess Devkali and hence the name.
+    </p>
+  </div>
+  <div id="place-img">
+    <img src="image/Chhoti-Devkali-Temple.jpg" alt="">
+  </div>
+</div>
+
+<br><br>
+
+<div id="place-right" class="d-flex">
+  <div id="place-txt">
+    <i class="ri-quill-pen-fill rounded-top"></i> <span>Ram ki Paidi</span>
+    <div id="line"></div>
+    <p>
+      A series of ghats set on the banks of river Saryu that serves as a platform to devotees who come here to wash away their sins. It also has lush green gardens surrounded by temples. The river front brings forth an outstanding panorama especially in floodlit night. These serve as platforms to devotees who, it is believed, come to wash away their sins by taking a dip in the holy river. Saryu provides a regular supply of water for the ghats and is maintained by the Irrigation Department, Government of Uttar Pradesh.
+    </p>
+  </div>
+  <div id="place-img">
+    <img src="image/Ram-ki-Paidi.jpg" alt="">
+  </div>
+</div>
+
+<br><br>
+
+<div id="place-right" class="d-flex">
+  <div id="place-img">
+    <img src="image/202401091701433748saryu-ayodhya.jpg" alt="">
+  </div>
+  <div id="place-txt1">
+    <i class="ri-quill-pen-fill rounded-top"></i> <span>Saryu River</span>
+    <div id="line"></div>
+    <p>
+      One of the most prominent waterways in Uttar Pradesh, the river finds mention in ancient Hindu scriptures such as the Ved and Ramayan. Literally translating to 'that which is streaming', it flows through Ayodhya and is believed to, rejuvenate and wash away impurities off this religious town! Hundreds of devotees come here to take a holy dip throughout the year on various religious occasions.
+    </p>
+  </div>
+</div>
+
+ <br><br>
+
+ <div id="place-right" class="d-flex">
+  <div id="place-img">
+    <img src="data:image/jpeg;base64,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" alt="">
+  </div>
+  <div id="place-txt1">
+    <i class="ri-quill-pen-fill rounded-top"></i> <span>Queen- Huh Memorial Park</span>
+    <div id="line"></div>
+    <p>
+      The holy city of Ayodhya, in Uttar Pradesh, plays host to hundreds of South Koreans every year that come to pay their tributes to the legendary Queen Huh Hwang-ok. According to legend, Queen Huh Hwang-ok, also known as Princess Suriratna, was the princess of Ayodhya before she went to South Korea and married King Kim Suro of Karak Clan in 48 AD. It is believed that she reached Korea on a boat, and was the first queen of King Suro of Geumgwan Gaya. She was 16-year-old when she got married and is considered to be the first queen of Gaya Kingdom.
+    </p>
+    <p>
+      It is because of the presence of her monument in Ayodhya that around 60 lakh people of the Karak clan consider the city as their maternal home. The memorial was first inaugurated in 2001 in Ayodhya.
+    </p>
+  </div>
+</div>
+
+<br><br>
+
+<div id="place-right" class="d-flex">
+  <div id="place-txt">
+    <i class="ri-quill-pen-fill rounded-top"></i> <span>Gurudwaras</span>
+    <div id="line"></div>
+    <p>
+      The Gurudwaras at Brahm Kund and Nazarbagh localities have been associated with Guru Nanak DevJi, Guru Teg Bahadur Ji and Guru Govind Singh Ji. A large number of followers visit the Gurudwaras and bow down in reverence.
+    </p>
+  </div>
+  <div id="place-img">
+    <img src="image/Gurudwaras.jpg" alt="">
+  </div>
+</div>
+
+<br><br>
+
+<div id="place-right" class="d-flex">
+  <div id="place-txt">
+    <i class="ri-quill-pen-fill rounded-top"></i> <span>Suraj Kund</span>
+    <div id="line"></div>
+    <p>
+      Located at Chaudah Koshi Parikrama Marg in Darshan Nagar area, at a distance of 4 km from Ayodhya, Suraj Kund is a big tank surrounded by ghats that presents an exclusively beautiful sight to visitors. The Suryavanshi rulers of Ayodhya, it is believed, constructed the kund to pay obeisance to the Sun god.
+    </p>
+  </div>
+  <div id="place-img">
+    <img src="image/Suraj-Kund.jpg" alt="">
+  </div>
+</div>
+
+<br><br>
+
+<div id="place-right" class="d-flex">
+  <div id="place-img">
+    <img src="image/Ghats-and-Kunds.jpg" alt="">
+  </div>
+  <div id="place-txt1">
+    <i class="ri-quill-pen-fill rounded-top"></i> <span>Ghats and Kunds</span>
+    <div id="line"></div>
+    <p>
+      Famous ghats and kunds are Raj Ghat, Ram Ghat, Lakshman Ghat, Tulsi Ghat, Naya Ghat, Swargdwar Ghat, Janaki Ghat, Vidya Kund, Vibhishan Kund, Dant Dhavan Kund, Sita Kund, etc.
+    </p>
+    <p>
+      Amovan Temple, Dashrath Mahal, Janaki Mahal, Lakshman Qila, Luv-Kush Temple, Mattagayandaji Temple, Raj Gaddi, Shri Ram-Janaki Birla Temple and Valmiki Ramayan Bhawan.
+    </p>
+  </div>
+</div>
+
+ <br><br>
+
+ <div id="place-right" class="d-flex">
+  <div id="place-img">
+    <img src="image/Gulab-Bari.jpg" alt="">
+  </div>
+  <div id="place-txt1">
+    <i class="ri-quill-pen-fill rounded-top"></i> <span>Gulab Bari</span>
+    <div id="line"></div>
+    <p>
+      As the name suggests Gulab Bari is a rose garden. The vast garden encompasses the entire area that houses the tomb of Shuja-ud-Daula and his family. The garden was established in 1775 and houses a large variety of beautiful rose beds. The splendid mausoleum has a huge dome and is surrounded by a wall. It has two big gateways to enter the complex.
+    </p>
+  </div>
+</div>
+
+<br><br>
+
+<div id="place-right" class="d-flex">
+  <div id="place-txt">
+    <i class="ri-quill-pen-fill rounded-top"></i> <span>Tomb of Bahu Begum</span>
+    <div id="line"></div>
+    <p>
+      It is the final resting place of Begum Unmatuzzohra Bano, the queen of Nawab Shuja-ud-Daula. The mausoleum is an outstanding example of Awadhi architectural style. The entire complex, full of greenery, is now a protected site under the Archaeological Survey of India (ASI) and is managed by the Shia Board Committee (Lucknow). It comes to life during Muharram.
+    </p>
+    <p>
+      One can witness a bird's eye view of the city from the top of the complex which is said to be the tallest standing edifice in Ayodhya.
+    </p>
+  </div>
+  <div id="place-img">
+    <img src="image/Tomb-of-Bahu-Begum.jpg" alt="">
+  </div>
+</div>
+
+<br><br>
+
+<div id="place-right" class="d-flex">
+  <div id="place-txt">
+    <i class="ri-quill-pen-fill rounded-top"></i> <span>Company Garden</span>
+    <div id="line"></div>
+    <p>
+      (5am-12noon & 4pm-9pm)Also known as Guptar Ghat Garden, the sprawling botanical garden is a wonderful place to take a walk, relax or just be with mother nature; leaving behind the worries of daily life and the hustle-bustle of urban areas.
+    </p>
+    <p>
+      Located on the bank of Saryu, one can marvel at the numerous varieties of shrubs and trees which have been planted here.
+    </p>
+  </div>
+  <div id="place-img">
+    <img src="image/Company-Garden.jpg" alt="">
+  </div>
+</div>
+
+<br><br>
+
+<div id="place-right" class="d-flex">
+  <div id="place-img">
+    <img src="image/Guptar-Ghat.jpg" alt="">
+  </div>
+  <div id="place-txt1">
+    <i class="ri-quill-pen-fill rounded-top"></i> <span>Guptar Ghat</span>
+    <div id="line"></div>
+    <p>
+      Situated on the banks of river Saryu, this is the very spot where Lord Rama performed Jal Samadhi. King Darshan Singh constructed it in the early 19th century.
+    </p>
+    <p>
+      One can also visit Ram Janaki Temple, Old Charan Paduka Temple, Narsingh Temple and Hanuman Temple on the ghat.
+    </p>
+  </div>
+</div>
+</div>
+
+  <!-- place to visit  -->
+
+
+  <!-- overview  -->
+  <div id="overview">
+  <nav id="navbar-example2" class="navbar">
+    <ul class="nav nav-pills">
+      <li class="nav-item" id="o-box">
+        <a  href="#scrollspyHeading1"><i class="bi bi-geo-alt"></i> How to reach</a>
+      </li>
+      <li class="nav-item" id="o-box">
+        <a  href="#scrollspyHeading2"><i class="bi bi-house"></i> Genral info</a>
+      </li>
+      <li class="nav-item" id="o-box">
+        <a  href="#scrollspyHeading3"><i class="bi bi-suitcase-lg-fill"></i> Travel Desk</a>
+      </li>
+      <li class="nav-item" id="o-box">
+        <a  href="#scrollspyHeading4"><i class="bi bi-handbag-fill"></i> Shopping</a>
+      </li>
+      <li class="nav-item" id="o-box">
+        <a  href="#scrollspyHeading5"><i class="ri-restaurant-line"></i> Food & Cuisine</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="over-txt" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example  p-3 rounded-2" tabindex="0">
+    <div id="scrollspyHeading1" class="over-nav">
+    <h5>By Air</h5>
+    <hr>
+    <p>For Ayodhya the nearest airports are Chaudhary Charan Singh Airport (Lucknow-134 km), or Bumrauli Airport (Prayagraj - 166 km)</p>
+    <h5>By Rail</h5>
+    <hr>
+    <p>Ayodhya is situated on the broad gauge Northern Railway line on Mughal Sarai – Lucknow main route. Ayodhya are connected to various parts of the country by many trains.</p>
+    <h5>By Road</h5>
+    <hr>
+    <p>Connected by road to several major cities and towns. Some of the major road distances are: Lucknow (134 km), Gorakhpur (147 km), Jhansi (441 km), Prayagraj (166 km), Sravasti (119 km), Varanasi (209 km) and Gonda (51 km).</p>
+    </div>
+    <hr>
+    <div id="scrollspyHeading3" class="over-nav">
+      <h5>Travel Agents</h5>
+      <p>Regional Tourist Office, House No. 1-3/152/4, near Pusparaj Guest House, Civil Lines, Ayodhya, UP. Ph - 05278223214</p>
+      <p>Government of UP Assistant Tourist Office, Pathik Niwas Saket, Near Railway Station, Ayodhya.</p>
+    </div>
+  </div>
+</div>
+
+  <!-- overview  -->
+
+  <!-- construction work  -->
+ 
+  <div id="work" class="d-flex">
+    <div id="work1">
+     <img width="250px" height="250px" src="https://rammandir-ayodhya.com/assets/img/progress-bar/Ram-Mandir-Ayodhya-Main-Page-Build-Rate-Banner-Image.png" alt="">
+    </div>
+    <div id="work3">
+      <!-- <img src="image/process.png" alt=""> -->
+      <h3>Construction work of Ram temple</h3>
+      <p>70% construction work of Ram temple in Ayodhya has been completed. In 2024, preparations are on to open the Ram temple for devotees.</p>
+    </div>
+    <div id="work2">
+      <iframe width="390" height="450" src="https://www.youtube.com/embed/2WLoRJdhEeM?si=4mOo_KjJ795T3pVy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+   
+  </div>
+  <!-- construction work  -->
+  
+  
+
+  <!-- footer  -->
+
+  <footer>
+  <img src="image/monuments-img.png" alt="">
+  <div id="ft-main">
+   <div id="ft-inn" class="d-flex">
+
+    <div id="links">
+      <h5>About Ayodhya</h5>
+      <p><i class="bi bi-record2"></i> History</p>
+      <p><i class="bi bi-record2"></i> Geography</p>
+      <p><i class="bi bi-record2"></i> People & Language</p>
+      <p><i class="bi bi-record2"></i> Administration & Economy</p>
+    </div>
+
+    <div id="links">
+      <h5>Share</h5>
+      <p><i class="bi bi-record2"></i> Photo Gallery</p>
+      <p><i class="bi bi-record2"></i> Video Gallery</p>
+      <p><i class="bi bi-record2"></i> Posters</p>
+      <p><i class="bi bi-record2"></i> Feedback</p>
+    </div>
+
+    <div id="links">
+      <h5>Policies</h5>
+      <p><i class="bi bi-record2"></i> Terms & Conditions</p>
+      <p><i class="bi bi-record2"></i> Copyright Policy</p>
+      <p><i class="bi bi-record2"></i> Privacy Policy</p>
+      <p><i class="bi bi-record2"></i> Help</p>
+    </div>
+
+    <div id="links">
+      <h5>Quick Links</h5>
+      <p><i class="bi bi-record2"></i> Press & Media</p>
+      <p><i class="bi bi-record2"></i> Map</p>
+      <p><i class="bi bi-record2"></i> Weather</p>
+      <p><i class="bi bi-record2"></i> E-Brochure</p>
+    </div>
+
+    <div id="links">
+      <h5>Other Info</h5>
+      <p><i class="bi bi-record2"></i> Emergency Services</p>
+      <p><i class="bi bi-record2"></i> FAQs</p>
+      <p><i class="bi bi-record2"></i> DOs & Don’ts</p>
+      <p><i class="bi bi-record2"></i> Best Viewed With</p>
+    </div>
+
+   </div>
+  </div>
+  </footer>
+
+  <!-- footer  -->
+</body>
+</html>

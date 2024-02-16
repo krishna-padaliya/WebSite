@@ -1,0 +1,706 @@
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    /* top: 0; */
+    width: 100%
+}
+
+.logo h1 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+nav ul li a:hover {
+    color: #f00;
+}
+
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px; 
+    /* width: 100%; */
+
+}
+
+.hero {
+    background-image: url(ford-gf748b5a15_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+ .hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bolder;
+} 
+
+.btn {
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #f00;
+}
+
+
+.model{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.car-card {
+    flex-basis: 33%;
+    padding: 20px;
+    text-align: center;
+}
+
+.car-card img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+}
+
+.car-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.car-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.text{
+    flex-basis: 33%;
+    padding: 20px;
+    text-align: center;
+}
+
+.text img {
+    width: 500px;
+    margin-bottom: 20px;
+    height: 500px;
+}
+
+.text h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.gallary{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   
+}
+.gallary img{
+    flex-basis: 33%;
+    width: 200px;
+    height: 200px;
+}
+.gallary img:hover{
+    transform:  scale(1.5);
+    overflow: hidden;
+}
+
+.container{
+	max-width: 1170px;
+	/* background-color: rgb(64, 59, 59); */
+	margin: auto;
+	height: 300px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer {
+	background-color: #333;
+	padding: 50px 0;
+	/* text-align: center; */
+	/* font-size: 14px; */
+	color:#fff;
+}
+.footer-col{
+	width: 30%;
+	padding: 0 15px;
+}
+.footer-col{
+	font-size: 18px;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.row .footer-col h4::before{
+	content: "";
+	position: relative;
+	left: 0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+    color: #fff;
+	text-decoration: none;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: rgb(239, 205, 140);
+	padding: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+    background-color: #ffffff;	
+}
+
+
+
+@media (min-width:781px) and (max-width:980px)
+{
+       header{
+        padding: 25px;
+        width: 980px;
+        justify-content: space-between;
+       }
+       .logo h1{
+        font-size: 25px;
+        font-weight: bolder;
+       }
+       nav ul li{
+        margin-right: 7px;
+        padding: 7px;
+        font-size: 20px;
+       }
+
+
+.cars .car-card h3{
+    font-size: 22px;
+}
+.cars .car-card p{
+    font-size: 17px;
+}
+.cars .car-card img{
+    width: 350px;
+    height: 230px;
+} 
+       .hero{
+        width: 940px;
+        background-size: cover;
+      
+       }
+       .hero h1{
+         font-size: 40px;
+         font-weight: bold;
+         text-align: center; 
+       }
+       .hero p{
+        font-size: 25px;
+        font-weight: bold;
+       }
+       .btn {
+        padding: 5px;
+        font-size: 19px;
+       }
+
+
+       .model{
+        font-size: 20px;
+        text-align: center;
+        width: 940px;
+       }
+
+       .cars{
+        flex-direction: column;
+        align-items: center;
+        width: 940px;
+       }
+
+       .services{
+        flex-direction: column;
+       }
+       .text img{
+        width: 550px;
+        height: 550px;
+       }
+       .text h1{
+        font-size: 30px;
+        
+       }
+       .text p{
+        
+        font-size: 23px;
+    }
+    /* .gallary{
+        flex-direction: row;
+        align-items: center;
+        width: 740px;
+    }
+    .gallary img{
+        flex-basis: 30%;
+        width: 200px;
+        height: 200px;
+      
+    } */
+
+      footer {
+          font-size: 20px;
+          padding: 10px;
+          width: 980px;
+      }
+    }
+
+
+
+
+@media (min-width:578px) and (max-width:780px)
+{
+       header{
+        padding: 20px;
+        width: 780px;
+        justify-content: space-between;
+       }
+       .logo h1{
+        font-size: 22px;
+        font-weight: bolder;
+       }
+       nav ul li{
+        margin-right: 7px;
+        padding: 7px;
+        font-size: 17px;
+       }
+
+
+
+       .hero{
+        width: 740px;
+        background-size: cover;
+      
+       }
+       .hero h1{
+         font-size: 27px;
+         font-weight: bold;
+         text-align: center; 
+       }
+       .hero p{
+        font-size: 20px;
+        font-weight: bold;
+       }
+       .btn {
+        padding: 5px;
+        font-size: 16px;
+       }
+
+
+       .model{
+        font-size: 20px;
+        text-align: center;
+        width: 740px;
+       }
+
+       .cars{
+        flex-direction: column;
+        align-items: center;
+        width: 740px;
+       }
+
+       .services{
+        flex-direction: column;
+       }
+       .text img{
+        width: 350px;
+        height: 350px;
+       }
+       .text h1{
+        font-size: 27px;
+        
+       }
+       .text p{
+        
+        font-size: 20px;
+    }
+    .gallary{
+        flex-direction: row;
+        justify-content: center;
+        width: 780px;
+    }
+    .gallary img{
+        flex-basis: 24%;
+        width: 300px;
+        height: 200px;
+      
+    }
+    footer {
+          font-size: 17px;
+          padding: 10px;
+          width: 780px;
+      }
+    }
+
+@media (min-width:481px) and (max-width:577px)
+{
+       header{
+        padding: 20px;
+        width: 576px;
+        justify-content: space-between;
+       }
+       .logo h1{
+        font-size: 20px;
+        font-weight: bolder;
+       }
+       nav ul li{
+        margin-right: 7px;
+        padding: 5px;
+        font-size: 15px;
+       }
+
+
+
+       .hero{
+        width: 535px;
+        background-size: cover;
+      
+       }
+       .hero h1{
+         font-size: 25px;
+         font-weight: bold;
+         text-align: center; 
+       }
+       .hero p{
+        font-size: 18px;
+        font-weight: bold;
+       }
+       .btn {
+        padding: 5px;
+        font-size: 15px;
+       }
+
+
+       .model{
+        font-size: 18px;
+        text-align: center;
+        width: 535px;
+       }
+
+       .cars{
+        flex-direction: column;
+        align-items: center;
+        width: 535px;
+       }
+
+       .services{
+        flex-direction: column;
+       }
+       .text img{
+        width: 350px;
+        height: 350px;
+       }
+       .text h1{
+        font-size: 25px;
+        
+       }
+       .text p{
+        
+        font-size: 18px;
+    }
+    .gallary{
+        flex-direction: column;
+        align-items: center;
+        width: 535px;
+    }
+    .gallary img{
+        flex-basis: 50%;
+        width: 300px;
+        height: 200px;
+      
+    }
+
+      footer {
+          font-size: 15px;
+          padding: 10px;
+          width: 575px;
+      }
+    }
+
+@media (min-width:361px) and (max-width:480px)
+{
+       header{
+        padding: 20px;
+        width: 480px;
+        justify-content: space-between;
+       }
+       .logo h1{
+        font-size: 15px;
+        font-weight: bold;
+       }
+       nav ul li{
+        margin-right: 7px;
+        padding: 5px;
+        font-size: 10px;
+       }
+
+
+
+       .hero{
+        width: 440px;
+        background-size: cover;
+      
+       }
+       .hero h1{
+         font-size: 20px;
+         font-weight: bold;
+         text-align: center; 
+       }
+       .hero p{
+        font-size: 13px;
+        font-weight: bold;
+       }
+       .btn {
+        padding: 5px;
+        font-size: 10px;
+       }
+
+
+       .model{
+        font-size: 15px;
+        text-align: center;
+        width: 410px;
+       }
+
+       .cars{
+        flex-direction: column;
+        align-items: center;
+        width: 440px;
+       }
+
+       .services{
+        flex-direction: column;
+       }
+       .text img{
+        width: 350px;
+        height: 350px;
+       }
+       .text h1{
+        font-size: 20px;
+        
+       }
+       .text p{
+        
+        font-size: 13px;
+    }
+    .gallary{
+        flex-direction: column;
+        align-items: center;
+        width: 450px;
+    }
+    .gallary img{
+        flex-basis: 50%;
+        width: 300px;
+        height: 200px;
+      
+    }
+
+      footer {
+          font-size: 15px;
+          padding: 10px;
+          width: 480px;
+      }
+    }
+@media (min-width:0px) and (max-width:360px)
+{
+       header{
+        padding: 20px;
+        width: 380px;
+        justify-content: space-between;
+       }
+       .logo h1{
+        font-size: 15px;
+        font-weight: bold;
+       }
+       nav ul li{
+        margin-right: 7px;
+        padding: 5px;
+        font-size: 10px;
+       }
+
+
+
+       .hero{
+        width: 320px;
+        background-size: cover;
+      
+       }
+       .hero h1{
+         font-size: 20px;
+         font-weight: bold;
+         text-align: center; 
+       }
+       .hero p{
+        font-size: 13px;
+        font-weight: bold;
+       }
+       .btn {
+        padding: 5px;
+        font-size: 10px;
+       }
+
+
+       .model{
+        font-size: 15px;
+        text-align: center;
+        width: 32px;
+       }
+
+       .cars{
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+       }
+
+       .services{
+        flex-direction: column;
+       }
+       .text img{
+        width: 350px;
+        height: 350px;
+       }
+       .text h1{
+        font-size: 20px;
+        
+       }
+       .text p{
+        
+        font-size: 13px;
+    }
+    .gallary{
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+    }
+    .gallary img{
+        flex-basis: 50%;
+        width: 300px;
+        height: 200px;
+      
+    }
+
+    .footer{
+        flex-direction: column;
+        height: 300px;
+    }
+    .footer-col h4{
+        font-size: 15px;
+    }
+    .footer-col ul li a{
+        font-size: 12px;
+    }
+    .footer-col .social-links a{
+        height: 20px;
+	width: 20px;
+    line-height: 20px;
+    }
+    }
